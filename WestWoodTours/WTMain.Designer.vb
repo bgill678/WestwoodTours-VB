@@ -49,7 +49,7 @@ Partial Class WTMain
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.InvoicesToolStripMenuItem, Me.ChartsToolStripMenuItem, Me.BookingsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(489, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(600, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -115,7 +115,7 @@ Partial Class WTMain
         '
         Me.SpacesLAB.AutoSize = True
         Me.SpacesLAB.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SpacesLAB.Location = New System.Drawing.Point(50, 63)
+        Me.SpacesLAB.Location = New System.Drawing.Point(97, 67)
         Me.SpacesLAB.Name = "SpacesLAB"
         Me.SpacesLAB.Size = New System.Drawing.Size(105, 13)
         Me.SpacesLAB.TabIndex = 2
@@ -124,7 +124,7 @@ Partial Class WTMain
         'SpacesNUM
         '
         Me.SpacesNUM.AutoSize = True
-        Me.SpacesNUM.Location = New System.Drawing.Point(50, 85)
+        Me.SpacesNUM.Location = New System.Drawing.Point(97, 89)
         Me.SpacesNUM.Name = "SpacesNUM"
         Me.SpacesNUM.Size = New System.Drawing.Size(0, 13)
         Me.SpacesNUM.TabIndex = 3
@@ -133,7 +133,7 @@ Partial Class WTMain
         '
         Me.BookingsLAB.AutoSize = True
         Me.BookingsLAB.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BookingsLAB.Location = New System.Drawing.Point(328, 63)
+        Me.BookingsLAB.Location = New System.Drawing.Point(375, 67)
         Me.BookingsLAB.Name = "BookingsLAB"
         Me.BookingsLAB.Size = New System.Drawing.Size(120, 13)
         Me.BookingsLAB.TabIndex = 4
@@ -142,7 +142,7 @@ Partial Class WTMain
         'BookingsNUM
         '
         Me.BookingsNUM.AutoSize = True
-        Me.BookingsNUM.Location = New System.Drawing.Point(328, 85)
+        Me.BookingsNUM.Location = New System.Drawing.Point(375, 89)
         Me.BookingsNUM.Name = "BookingsNUM"
         Me.BookingsNUM.Size = New System.Drawing.Size(0, 13)
         Me.BookingsNUM.TabIndex = 5
@@ -150,7 +150,7 @@ Partial Class WTMain
         'ExpenseNUM
         '
         Me.ExpenseNUM.AutoSize = True
-        Me.ExpenseNUM.Location = New System.Drawing.Point(205, 85)
+        Me.ExpenseNUM.Location = New System.Drawing.Point(252, 89)
         Me.ExpenseNUM.Name = "ExpenseNUM"
         Me.ExpenseNUM.Size = New System.Drawing.Size(0, 13)
         Me.ExpenseNUM.TabIndex = 7
@@ -159,7 +159,7 @@ Partial Class WTMain
         '
         Me.ExpenseLAB.AutoSize = True
         Me.ExpenseLAB.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ExpenseLAB.Location = New System.Drawing.Point(196, 63)
+        Me.ExpenseLAB.Location = New System.Drawing.Point(243, 67)
         Me.ExpenseLAB.Name = "ExpenseLAB"
         Me.ExpenseLAB.Size = New System.Drawing.Size(88, 13)
         Me.ExpenseLAB.TabIndex = 6
@@ -173,7 +173,7 @@ Partial Class WTMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(489, 158)
+        Me.ClientSize = New System.Drawing.Size(600, 232)
         Me.Controls.Add(Me.ExpenseNUM)
         Me.Controls.Add(Me.ExpenseLAB)
         Me.Controls.Add(Me.BookingsNUM)

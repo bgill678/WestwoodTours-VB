@@ -42,6 +42,7 @@ Partial Class Invoice
         Me.Label5 = New System.Windows.Forms.Label()
         Me.StaffNameBOX = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Toggle1 = New WestWoodTours.Toggle()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -142,7 +143,7 @@ Partial Class Invoice
         'PriceCBX
         '
         Me.PriceCBX.AutoSize = True
-        Me.PriceCBX.Location = New System.Drawing.Point(15, 412)
+        Me.PriceCBX.Location = New System.Drawing.Point(317, 376)
         Me.PriceCBX.Name = "PriceCBX"
         Me.PriceCBX.Size = New System.Drawing.Size(50, 17)
         Me.PriceCBX.TabIndex = 9
@@ -152,7 +153,7 @@ Partial Class Invoice
         'MaxCBX
         '
         Me.MaxCBX.AutoSize = True
-        Me.MaxCBX.Location = New System.Drawing.Point(159, 412)
+        Me.MaxCBX.Location = New System.Drawing.Point(317, 422)
         Me.MaxCBX.Name = "MaxCBX"
         Me.MaxCBX.Size = New System.Drawing.Size(106, 17)
         Me.MaxCBX.TabIndex = 10
@@ -162,7 +163,7 @@ Partial Class Invoice
         'PlacesCBX
         '
         Me.PlacesCBX.AutoSize = True
-        Me.PlacesCBX.Location = New System.Drawing.Point(317, 412)
+        Me.PlacesCBX.Location = New System.Drawing.Point(317, 399)
         Me.PlacesCBX.Name = "PlacesCBX"
         Me.PlacesCBX.Size = New System.Drawing.Size(104, 17)
         Me.PlacesCBX.TabIndex = 11
@@ -217,11 +218,20 @@ Partial Class Invoice
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "LoginID"
         '
+        'Toggle1
+        '
+        Me.Toggle1.Checked = False
+        Me.Toggle1.Location = New System.Drawing.Point(12, 406)
+        Me.Toggle1.Name = "Toggle1"
+        Me.Toggle1.Size = New System.Drawing.Size(110, 33)
+        Me.Toggle1.TabIndex = 18
+        '
         'Invoice
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(442, 458)
+        Me.Controls.Add(Me.Toggle1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.StaffNameBOX)
         Me.Controls.Add(Me.Label5)
@@ -270,4 +280,5 @@ Partial Class Invoice
     Friend WithEvents Label5 As Label
     Friend WithEvents StaffNameBOX As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents Toggle1 As Toggle
 End Class

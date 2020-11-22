@@ -41,6 +41,7 @@ Partial Class WTMain
         Me.ExpenseNUM = New System.Windows.Forms.Label()
         Me.ExpenseLAB = New System.Windows.Forms.Label()
         Me.Refresh = New System.Windows.Forms.Timer(Me.components)
+        Me.Toggle1 = New WestWoodTours.Toggle()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -169,11 +170,20 @@ Partial Class WTMain
         '
         Me.Refresh.Interval = 3000
         '
+        'Toggle1
+        '
+        Me.Toggle1.Checked = False
+        Me.Toggle1.Location = New System.Drawing.Point(540, 205)
+        Me.Toggle1.Name = "Toggle1"
+        Me.Toggle1.Size = New System.Drawing.Size(48, 26)
+        Me.Toggle1.TabIndex = 9
+        '
         'WTMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(600, 232)
+        Me.Controls.Add(Me.Toggle1)
         Me.Controls.Add(Me.ExpenseNUM)
         Me.Controls.Add(Me.ExpenseLAB)
         Me.Controls.Add(Me.BookingsNUM)
@@ -211,4 +221,5 @@ Partial Class WTMain
     Friend WithEvents ExpenseNUM As Label
     Friend WithEvents ExpenseLAB As Label
     Friend WithEvents Refresh As Timer
+    Friend WithEvents Toggle1 As Toggle
 End Class

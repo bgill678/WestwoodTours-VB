@@ -87,6 +87,12 @@
     <Compile Include="Invoices.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Toggle.Designer.vb">
+      <DependentUpon>Toggle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Toggle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="WTMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Invoices.resx">
       <DependentUpon>Invoices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toggle.resx">
+      <DependentUpon>Toggle.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WTMain.resx">
       <DependentUpon>WTMain.vb</DependentUpon>

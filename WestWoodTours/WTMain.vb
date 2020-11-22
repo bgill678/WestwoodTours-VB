@@ -1,5 +1,18 @@
 ﻿Imports System.Threading
-
+Module Darkmode
+    Private m_FormBackgroundColor As Color
+    Public Property FormBackgroundColor As Color
+        Get
+            Return m_FormBackgroundColor
+        End Get
+        Set(value As Color)
+            m_FormBackgroundColor = value
+            For Each Frm As Form In Application.OpenForms
+                Frm.BackColor = m_FormBackgroundColor
+            Next
+        End Set
+    End Property
+End Module
 Public Class WTMain
 
     Dim exApp As New Microsoft.Office.Interop.Excel.Application
@@ -11,6 +24,7 @@ Public Class WTMain
         SpacesNUM.Text = exWS.Range("N62").Value.ToString
         ExpenseNUM.Text = exWS.Range("I3").Value.ToString
         BookingsNUM.Text = exWS.Range("A3").Value.ToString
+        Me.BackColor = FormBackgroundColor
     End Sub
 
 
@@ -39,6 +53,10 @@ Public Class WTMain
     End Sub
 
     Private Sub RefreshChartToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RefreshChartToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub Toggle1_Load(sender As Object, e As EventArgs) Handles Toggle1.Load
 
     End Sub
 End Class

@@ -81,6 +81,12 @@
     <Compile Include="Bookings.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Charts.Designer.vb">
+      <DependentUpon>Charts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Charts.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Invoices.Designer.vb">
       <DependentUpon>Invoices.vb</DependentUpon>
     </Compile>
@@ -126,6 +132,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Bookings.resx">
       <DependentUpon>Bookings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts.resx">
+      <DependentUpon>Charts.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Invoices.resx">
       <DependentUpon>Invoices.vb</DependentUpon>

@@ -27,6 +27,8 @@ Partial Class Charts
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Toggle1 = New WestWoodTours.Toggle()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -58,11 +60,31 @@ Partial Class Charts
         Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
+        'Toggle1
+        '
+        Me.Toggle1.Checked = False
+        Me.Toggle1.Location = New System.Drawing.Point(733, 420)
+        Me.Toggle1.Name = "Toggle1"
+        Me.Toggle1.Size = New System.Drawing.Size(62, 25)
+        Me.Toggle1.TabIndex = 6
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(693, 398)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(102, 19)
+        Me.Label6.TabIndex = 20
+        Me.Label6.Text = "Dark Mode!"
+        '
         'Charts
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(795, 448)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Toggle1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -79,4 +101,6 @@ Partial Class Charts
     Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CloseToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Toggle1 As Toggle
+    Friend WithEvents Label6 As Label
 End Class

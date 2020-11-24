@@ -42,6 +42,7 @@ Partial Class WTMain
         Me.ExpenseLAB = New System.Windows.Forms.Label()
         Me.Refresh = New System.Windows.Forms.Timer(Me.components)
         Me.Toggle1 = New WestWoodTours.Toggle()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -173,16 +174,27 @@ Partial Class WTMain
         'Toggle1
         '
         Me.Toggle1.Checked = False
-        Me.Toggle1.Location = New System.Drawing.Point(540, 205)
+        Me.Toggle1.Location = New System.Drawing.Point(525, 196)
         Me.Toggle1.Name = "Toggle1"
-        Me.Toggle1.Size = New System.Drawing.Size(48, 26)
+        Me.Toggle1.Size = New System.Drawing.Size(63, 26)
         Me.Toggle1.TabIndex = 9
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(498, 174)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(102, 19)
+        Me.Label6.TabIndex = 20
+        Me.Label6.Text = "Dark Mode!"
         '
         'WTMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(600, 232)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Toggle1)
         Me.Controls.Add(Me.ExpenseNUM)
         Me.Controls.Add(Me.ExpenseLAB)
@@ -222,4 +234,5 @@ Partial Class WTMain
     Friend WithEvents ExpenseLAB As Label
     Friend WithEvents Refresh As Timer
     Friend WithEvents Toggle1 As Toggle
+    Friend WithEvents Label6 As Label
 End Class

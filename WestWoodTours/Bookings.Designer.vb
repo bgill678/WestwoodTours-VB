@@ -56,6 +56,8 @@ Partial Class Bookings
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Toggle1 = New WestWoodTours.Toggle()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -362,11 +364,31 @@ Partial Class Bookings
         Me.Label6.Text = "On the right you will see a selection of Cities from the database. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Please selec" &
     "t one to view information about that specific City. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "--->"
         '
+        'Toggle1
+        '
+        Me.Toggle1.Checked = False
+        Me.Toggle1.Location = New System.Drawing.Point(806, 518)
+        Me.Toggle1.Name = "Toggle1"
+        Me.Toggle1.Size = New System.Drawing.Size(70, 29)
+        Me.Toggle1.TabIndex = 33
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(786, 496)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(102, 19)
+        Me.Label7.TabIndex = 34
+        Me.Label7.Text = "Dark Mode!"
+        '
         'Bookings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(900, 559)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Toggle1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -443,4 +465,6 @@ Partial Class Bookings
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Toggle1 As Toggle
+    Friend WithEvents Label7 As Label
 End Class

@@ -29,8 +29,6 @@ Partial Class WTMain
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InvoicesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CreateInvoiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ChartsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RefreshChartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BookingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BookingsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChartsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -48,7 +46,7 @@ Partial Class WTMain
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.InvoicesToolStripMenuItem, Me.ChartsToolStripMenuItem, Me.BookingsToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.InvoicesToolStripMenuItem, Me.BookingsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(600, 24)
@@ -78,39 +76,26 @@ Partial Class WTMain
         'CreateInvoiceToolStripMenuItem
         '
         Me.CreateInvoiceToolStripMenuItem.Name = "CreateInvoiceToolStripMenuItem"
-        Me.CreateInvoiceToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.CreateInvoiceToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CreateInvoiceToolStripMenuItem.Text = "Create Invoice"
-        '
-        'ChartsToolStripMenuItem
-        '
-        Me.ChartsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RefreshChartToolStripMenuItem})
-        Me.ChartsToolStripMenuItem.Name = "ChartsToolStripMenuItem"
-        Me.ChartsToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.ChartsToolStripMenuItem.Text = "Charts"
-        '
-        'RefreshChartToolStripMenuItem
-        '
-        Me.RefreshChartToolStripMenuItem.Name = "RefreshChartToolStripMenuItem"
-        Me.RefreshChartToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
-        Me.RefreshChartToolStripMenuItem.Text = "Refresh Chart"
         '
         'BookingsToolStripMenuItem
         '
         Me.BookingsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BookingsToolStripMenuItem1, Me.ChartsToolStripMenuItem1})
         Me.BookingsToolStripMenuItem.Name = "BookingsToolStripMenuItem"
-        Me.BookingsToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
-        Me.BookingsToolStripMenuItem.Text = "Details"
+        Me.BookingsToolStripMenuItem.Size = New System.Drawing.Size(82, 20)
+        Me.BookingsToolStripMenuItem.Text = "Information"
         '
         'BookingsToolStripMenuItem1
         '
         Me.BookingsToolStripMenuItem1.Name = "BookingsToolStripMenuItem1"
-        Me.BookingsToolStripMenuItem1.Size = New System.Drawing.Size(123, 22)
+        Me.BookingsToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.BookingsToolStripMenuItem1.Text = "Bookings"
         '
         'ChartsToolStripMenuItem1
         '
         Me.ChartsToolStripMenuItem1.Name = "ChartsToolStripMenuItem1"
-        Me.ChartsToolStripMenuItem1.Size = New System.Drawing.Size(123, 22)
+        Me.ChartsToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.ChartsToolStripMenuItem1.Text = "Charts"
         '
         'SpacesLAB
@@ -221,8 +206,6 @@ Partial Class WTMain
     Friend WithEvents CloseToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InvoicesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CreateInvoiceToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ChartsToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents RefreshChartToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SpacesLAB As Label
     Friend WithEvents SpacesNUM As Label
     Friend WithEvents BookingsToolStripMenuItem As ToolStripMenuItem

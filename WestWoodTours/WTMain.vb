@@ -19,7 +19,7 @@ Public Class WTMain
     Dim exWB As Microsoft.Office.Interop.Excel.Workbook
     Dim exWS As Microsoft.Office.Interop.Excel.Worksheet
     Private Sub WTMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        exWB = exApp.Workbooks.Open("D:\Documents\College 20-21\Application Design VS PROJ\Excel Files\data.xlsx")
+        exWB = exApp.Workbooks.Open("D:\data.xlsx")
         exWS = exWB.ActiveSheet
         SpacesNUM.Text = exWS.Range("N62").Value.ToString
         ExpenseNUM.Text = exWS.Range("I3").Value.ToString
@@ -52,11 +52,16 @@ Public Class WTMain
 
     End Sub
 
-    Private Sub RefreshChartToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RefreshChartToolStripMenuItem.Click
+    Private Sub RefreshChartToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub Toggle1_Load(sender As Object, e As EventArgs) Handles Toggle1.Load
 
+    End Sub
+
+    Private Sub ChartsToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ChartsToolStripMenuItem1.Click
+        Dim charts = New Charts()
+        charts.Show()
     End Sub
 End Class

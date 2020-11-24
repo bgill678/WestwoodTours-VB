@@ -4,7 +4,7 @@
     Dim exWS As Microsoft.Office.Interop.Excel.Worksheet
 
     Private Sub Bookings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        exWB = exApp.Workbooks.Open("D:\Documents\College 20-21\Application Design VS PROJ\Excel Files\data.xlsx")
+        exWB = exApp.Workbooks.Open("D:\data.xlsx")
         exWS = exWB.ActiveSheet
     End Sub
 

@@ -38,7 +38,6 @@ Partial Class Invoice
         Me.PlacesCBX = New System.Windows.Forms.CheckBox()
         Me.CustomerNameBOX = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.LoginBOX = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.StaffNameBOX = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -64,6 +63,7 @@ Partial Class Invoice
         '
         'ToursLIST
         '
+        Me.ToursLIST.BackColor = System.Drawing.Color.Snow
         Me.ToursLIST.FormattingEnabled = True
         Me.ToursLIST.Items.AddRange(New Object() {"BMOU2", "BGIA5", "BFOL5", "BCIT4", "DWHI4", "DLEE4", "DCAS2", "ELLOM3", "ECIT2", "EBRI4", "HYOR3", "HHUM2", "HCIT1", "HBUR2", "HBEV2", "LYOR2", "LWAR2", "LMAN1", "LCIT3", "LCHA5", "LWIN3", "LROY3", "LMUS2", "LCIT8", "NHAD2", "NCIT1", "NALA4", "SWIN4", "SWEY2", "SISLE5", "SHIG3", "SDID2", "SCOT7"})
         Me.ToursLIST.Location = New System.Drawing.Point(12, 275)
@@ -73,7 +73,7 @@ Partial Class Invoice
         '
         'InvoiceSendBTN
         '
-        Me.InvoiceSendBTN.Location = New System.Drawing.Point(305, 347)
+        Me.InvoiceSendBTN.Location = New System.Drawing.Point(305, 321)
         Me.InvoiceSendBTN.Name = "InvoiceSendBTN"
         Me.InvoiceSendBTN.Size = New System.Drawing.Size(125, 23)
         Me.InvoiceSendBTN.TabIndex = 3
@@ -143,7 +143,7 @@ Partial Class Invoice
         'PriceCBX
         '
         Me.PriceCBX.AutoSize = True
-        Me.PriceCBX.Location = New System.Drawing.Point(317, 376)
+        Me.PriceCBX.Location = New System.Drawing.Point(305, 360)
         Me.PriceCBX.Name = "PriceCBX"
         Me.PriceCBX.Size = New System.Drawing.Size(50, 17)
         Me.PriceCBX.TabIndex = 9
@@ -153,7 +153,7 @@ Partial Class Invoice
         'MaxCBX
         '
         Me.MaxCBX.AutoSize = True
-        Me.MaxCBX.Location = New System.Drawing.Point(317, 422)
+        Me.MaxCBX.Location = New System.Drawing.Point(305, 406)
         Me.MaxCBX.Name = "MaxCBX"
         Me.MaxCBX.Size = New System.Drawing.Size(106, 17)
         Me.MaxCBX.TabIndex = 10
@@ -163,7 +163,7 @@ Partial Class Invoice
         'PlacesCBX
         '
         Me.PlacesCBX.AutoSize = True
-        Me.PlacesCBX.Location = New System.Drawing.Point(317, 399)
+        Me.PlacesCBX.Location = New System.Drawing.Point(305, 383)
         Me.PlacesCBX.Name = "PlacesCBX"
         Me.PlacesCBX.Size = New System.Drawing.Size(104, 17)
         Me.PlacesCBX.TabIndex = 11
@@ -186,13 +186,6 @@ Partial Class Invoice
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Customer Name"
         '
-        'LoginBOX
-        '
-        Me.LoginBOX.Location = New System.Drawing.Point(305, 321)
-        Me.LoginBOX.Name = "LoginBOX"
-        Me.LoginBOX.Size = New System.Drawing.Size(125, 20)
-        Me.LoginBOX.TabIndex = 14
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -212,18 +205,19 @@ Partial Class Invoice
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(239, 324)
+        Me.Label6.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(12, 399)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(44, 13)
-        Me.Label6.TabIndex = 17
-        Me.Label6.Text = "LoginID"
+        Me.Label6.Size = New System.Drawing.Size(102, 19)
+        Me.Label6.TabIndex = 19
+        Me.Label6.Text = "Dark Mode!"
         '
         'Toggle1
         '
         Me.Toggle1.Checked = False
-        Me.Toggle1.Location = New System.Drawing.Point(12, 406)
+        Me.Toggle1.Location = New System.Drawing.Point(12, 421)
         Me.Toggle1.Name = "Toggle1"
-        Me.Toggle1.Size = New System.Drawing.Size(110, 33)
+        Me.Toggle1.Size = New System.Drawing.Size(61, 25)
         Me.Toggle1.TabIndex = 18
         '
         'Invoice
@@ -231,11 +225,10 @@ Partial Class Invoice
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(442, 458)
-        Me.Controls.Add(Me.Toggle1)
         Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Toggle1)
         Me.Controls.Add(Me.StaffNameBOX)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.LoginBOX)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.CustomerNameBOX)
         Me.Controls.Add(Me.PlacesCBX)
@@ -276,9 +269,8 @@ Partial Class Invoice
     Friend WithEvents PlacesCBX As CheckBox
     Friend WithEvents CustomerNameBOX As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents LoginBOX As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents StaffNameBOX As TextBox
-    Friend WithEvents Label6 As Label
     Friend WithEvents Toggle1 As Toggle
+    Friend WithEvents Label6 As Label
 End Class

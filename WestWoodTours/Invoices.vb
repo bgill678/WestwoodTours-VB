@@ -456,7 +456,7 @@ Public Class Invoice
             Dim Smtp_Server As New SmtpClient
             Dim e_mail As New MailMessage
             Smtp_Server.UseDefaultCredentials = False
-            Smtp_Server.Credentials = New Net.NetworkCredential("joelcollierj14020@gmail.com", "")
+            Smtp_Server.Credentials = New Net.NetworkCredential("joelcollierj14020@gmail.com", "JC1402011")
             Smtp_Server.Port = 587
             Smtp_Server.EnableSsl = True
             Smtp_Server.Host = "smtp.gmail.com"
@@ -482,12 +482,8 @@ Public Class Invoice
             e_mail.Body = emailBody
             If MaxCBX.Checked Or PriceCBX.Checked Or PlacesCBX.Checked Then
                 If EmailBOX.SelectedItems.Count >= 0 Or Not String.IsNullOrEmpty(AddressBOX.Text) Then
-                    If Regex.IsMatch(LoginBOX.Text, "\b" + Regex.Escape(staffID) + "\b") Then
-                        Smtp_Server.Send(e_mail)
-                        MsgBox("Your invoice has been sent")
-                    Else
-                        MsgBox("You need to enter the correct Staff ID to send an invoice.")
-                    End If
+                    Smtp_Server.Send(e_mail)
+                    MsgBox("Your invoice has been sent")
                 Else
                     MsgBox("Please select an email on the left or use the box")
                 End If

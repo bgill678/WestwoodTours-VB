@@ -53,6 +53,9 @@ Partial Class Bookings
         Me.CityAverageNUM = New System.Windows.Forms.Label()
         Me.AverageNumberLAB = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,7 +64,7 @@ Partial Class Bookings
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(678, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(900, 24)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -75,25 +78,25 @@ Partial Class Bookings
         'CloseToolStripMenuItem
         '
         Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.CloseToolStripMenuItem.Text = "Close"
         '
         'TripCODES
         '
         Me.TripCODES.FormattingEnabled = True
         Me.TripCODES.Items.AddRange(New Object() {"BMOU2", "BGIA5", "BFOL5", "BCIT4", "DWHI4", "DLEE4", "DCAS2", "ELLOM3", "ECIT2", "EBRI4", "HYOR3", "HHUM2", "HCIT1", "HBUR2", "HBEV2", "LYOR2", "LWAR2", "LMAN1", "LCIT3", "LCHA5", "LWIN3", "LROY3", "LMUS2", "LCIT8", "NHAD2", "NCIT1", "NALA4", "SWIN4", "SWEY2", "SISLE5", "SHIG3", "SDID2", "SCOT7"})
-        Me.TripCODES.Location = New System.Drawing.Point(22, 77)
+        Me.TripCODES.Location = New System.Drawing.Point(12, 117)
         Me.TripCODES.Name = "TripCODES"
-        Me.TripCODES.Size = New System.Drawing.Size(78, 342)
+        Me.TripCODES.Size = New System.Drawing.Size(225, 186)
         Me.TripCODES.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(19, 52)
+        Me.Label1.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(50, 64)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(68, 13)
+        Me.Label1.Size = New System.Drawing.Size(159, 33)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Trip Codes"
         '
@@ -101,7 +104,7 @@ Partial Class Bookings
         '
         Me.BookingTripPRICE.AutoSize = True
         Me.BookingTripPRICE.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BookingTripPRICE.Location = New System.Drawing.Point(151, 85)
+        Me.BookingTripPRICE.Location = New System.Drawing.Point(18, 322)
         Me.BookingTripPRICE.Name = "BookingTripPRICE"
         Me.BookingTripPRICE.Size = New System.Drawing.Size(77, 13)
         Me.BookingTripPRICE.TabIndex = 5
@@ -111,7 +114,7 @@ Partial Class Bookings
         '
         Me.BookingTripMAXIUMUM.AutoSize = True
         Me.BookingTripMAXIUMUM.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BookingTripMAXIUMUM.Location = New System.Drawing.Point(291, 85)
+        Me.BookingTripMAXIUMUM.Location = New System.Drawing.Point(158, 322)
         Me.BookingTripMAXIUMUM.Name = "BookingTripMAXIUMUM"
         Me.BookingTripMAXIUMUM.Size = New System.Drawing.Size(100, 13)
         Me.BookingTripMAXIUMUM.TabIndex = 6
@@ -121,7 +124,7 @@ Partial Class Bookings
         '
         Me.BookingTripTAKEN.AutoSize = True
         Me.BookingTripTAKEN.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BookingTripTAKEN.Location = New System.Drawing.Point(147, 229)
+        Me.BookingTripTAKEN.Location = New System.Drawing.Point(15, 443)
         Me.BookingTripTAKEN.Name = "BookingTripTAKEN"
         Me.BookingTripTAKEN.Size = New System.Drawing.Size(85, 13)
         Me.BookingTripTAKEN.TabIndex = 7
@@ -131,7 +134,7 @@ Partial Class Bookings
         '
         Me.BookingTripAVAILABLE.AutoSize = True
         Me.BookingTripAVAILABLE.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BookingTripAVAILABLE.Location = New System.Drawing.Point(291, 229)
+        Me.BookingTripAVAILABLE.Location = New System.Drawing.Point(159, 443)
         Me.BookingTripAVAILABLE.Name = "BookingTripAVAILABLE"
         Me.BookingTripAVAILABLE.Size = New System.Drawing.Size(101, 13)
         Me.BookingTripAVAILABLE.TabIndex = 8
@@ -140,7 +143,8 @@ Partial Class Bookings
         'TripPriceNUM
         '
         Me.TripPriceNUM.AutoSize = True
-        Me.TripPriceNUM.Location = New System.Drawing.Point(157, 111)
+        Me.TripPriceNUM.BackColor = System.Drawing.Color.Transparent
+        Me.TripPriceNUM.Location = New System.Drawing.Point(24, 348)
         Me.TripPriceNUM.Name = "TripPriceNUM"
         Me.TripPriceNUM.Size = New System.Drawing.Size(0, 13)
         Me.TripPriceNUM.TabIndex = 9
@@ -148,7 +152,8 @@ Partial Class Bookings
         'TripMaximumNUM
         '
         Me.TripMaximumNUM.AutoSize = True
-        Me.TripMaximumNUM.Location = New System.Drawing.Point(291, 111)
+        Me.TripMaximumNUM.BackColor = System.Drawing.Color.Transparent
+        Me.TripMaximumNUM.Location = New System.Drawing.Point(158, 348)
         Me.TripMaximumNUM.Name = "TripMaximumNUM"
         Me.TripMaximumNUM.Size = New System.Drawing.Size(0, 13)
         Me.TripMaximumNUM.TabIndex = 10
@@ -156,7 +161,7 @@ Partial Class Bookings
         'TripTakenNUM
         '
         Me.TripTakenNUM.AutoSize = True
-        Me.TripTakenNUM.Location = New System.Drawing.Point(147, 255)
+        Me.TripTakenNUM.Location = New System.Drawing.Point(15, 469)
         Me.TripTakenNUM.Name = "TripTakenNUM"
         Me.TripTakenNUM.Size = New System.Drawing.Size(0, 13)
         Me.TripTakenNUM.TabIndex = 11
@@ -164,7 +169,7 @@ Partial Class Bookings
         'TripAvailableNUM
         '
         Me.TripAvailableNUM.AutoSize = True
-        Me.TripAvailableNUM.Location = New System.Drawing.Point(291, 255)
+        Me.TripAvailableNUM.Location = New System.Drawing.Point(159, 469)
         Me.TripAvailableNUM.Name = "TripAvailableNUM"
         Me.TripAvailableNUM.Size = New System.Drawing.Size(0, 13)
         Me.TripAvailableNUM.TabIndex = 12
@@ -172,7 +177,7 @@ Partial Class Bookings
         'AdultBookingsNUM
         '
         Me.AdultBookingsNUM.AutoSize = True
-        Me.AdultBookingsNUM.Location = New System.Drawing.Point(150, 175)
+        Me.AdultBookingsNUM.Location = New System.Drawing.Point(18, 400)
         Me.AdultBookingsNUM.Name = "AdultBookingsNUM"
         Me.AdultBookingsNUM.Size = New System.Drawing.Size(0, 13)
         Me.AdultBookingsNUM.TabIndex = 14
@@ -181,7 +186,7 @@ Partial Class Bookings
         '
         Me.BookingTripADULT.AutoSize = True
         Me.BookingTripADULT.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BookingTripADULT.Location = New System.Drawing.Point(147, 157)
+        Me.BookingTripADULT.Location = New System.Drawing.Point(15, 382)
         Me.BookingTripADULT.Name = "BookingTripADULT"
         Me.BookingTripADULT.Size = New System.Drawing.Size(92, 13)
         Me.BookingTripADULT.TabIndex = 13
@@ -190,7 +195,7 @@ Partial Class Bookings
         'ChildBookingsNUM
         '
         Me.ChildBookingsNUM.AutoSize = True
-        Me.ChildBookingsNUM.Location = New System.Drawing.Point(291, 175)
+        Me.ChildBookingsNUM.Location = New System.Drawing.Point(159, 400)
         Me.ChildBookingsNUM.Name = "ChildBookingsNUM"
         Me.ChildBookingsNUM.Size = New System.Drawing.Size(0, 13)
         Me.ChildBookingsNUM.TabIndex = 16
@@ -199,7 +204,7 @@ Partial Class Bookings
         '
         Me.BookingTripCHILD.AutoSize = True
         Me.BookingTripCHILD.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BookingTripCHILD.Location = New System.Drawing.Point(291, 157)
+        Me.BookingTripCHILD.Location = New System.Drawing.Point(159, 382)
         Me.BookingTripCHILD.Name = "BookingTripCHILD"
         Me.BookingTripCHILD.Size = New System.Drawing.Size(91, 13)
         Me.BookingTripCHILD.TabIndex = 15
@@ -208,7 +213,7 @@ Partial Class Bookings
         'SalesBookingsNUM
         '
         Me.SalesBookingsNUM.AutoSize = True
-        Me.SalesBookingsNUM.Location = New System.Drawing.Point(151, 326)
+        Me.SalesBookingsNUM.Location = New System.Drawing.Point(19, 527)
         Me.SalesBookingsNUM.Name = "SalesBookingsNUM"
         Me.SalesBookingsNUM.Size = New System.Drawing.Size(0, 13)
         Me.SalesBookingsNUM.TabIndex = 18
@@ -217,7 +222,7 @@ Partial Class Bookings
         '
         Me.BookingTripSALES.AutoSize = True
         Me.BookingTripSALES.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BookingTripSALES.Location = New System.Drawing.Point(147, 300)
+        Me.BookingTripSALES.Location = New System.Drawing.Point(15, 501)
         Me.BookingTripSALES.Name = "BookingTripSALES"
         Me.BookingTripSALES.Size = New System.Drawing.Size(71, 13)
         Me.BookingTripSALES.TabIndex = 17
@@ -226,7 +231,7 @@ Partial Class Bookings
         'CashSymbol1
         '
         Me.CashSymbol1.AutoSize = True
-        Me.CashSymbol1.Location = New System.Drawing.Point(138, 326)
+        Me.CashSymbol1.Location = New System.Drawing.Point(6, 527)
         Me.CashSymbol1.Name = "CashSymbol1"
         Me.CashSymbol1.Size = New System.Drawing.Size(13, 13)
         Me.CashSymbol1.TabIndex = 19
@@ -235,7 +240,8 @@ Partial Class Bookings
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(138, 111)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Location = New System.Drawing.Point(5, 348)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(13, 13)
         Me.Label2.TabIndex = 20
@@ -244,7 +250,7 @@ Partial Class Bookings
         'CashSymbol2
         '
         Me.CashSymbol2.AutoSize = True
-        Me.CashSymbol2.Location = New System.Drawing.Point(287, 326)
+        Me.CashSymbol2.Location = New System.Drawing.Point(155, 527)
         Me.CashSymbol2.Name = "CashSymbol2"
         Me.CashSymbol2.Size = New System.Drawing.Size(13, 13)
         Me.CashSymbol2.TabIndex = 23
@@ -253,7 +259,7 @@ Partial Class Bookings
         'ProfitBookingsNUM
         '
         Me.ProfitBookingsNUM.AutoSize = True
-        Me.ProfitBookingsNUM.Location = New System.Drawing.Point(300, 326)
+        Me.ProfitBookingsNUM.Location = New System.Drawing.Point(168, 527)
         Me.ProfitBookingsNUM.Name = "ProfitBookingsNUM"
         Me.ProfitBookingsNUM.Size = New System.Drawing.Size(0, 13)
         Me.ProfitBookingsNUM.TabIndex = 22
@@ -262,7 +268,7 @@ Partial Class Bookings
         '
         Me.BookingTripPROFIT.AutoSize = True
         Me.BookingTripPROFIT.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BookingTripPROFIT.Location = New System.Drawing.Point(291, 300)
+        Me.BookingTripPROFIT.Location = New System.Drawing.Point(159, 501)
         Me.BookingTripPROFIT.Name = "BookingTripPROFIT"
         Me.BookingTripPROFIT.Size = New System.Drawing.Size(70, 13)
         Me.BookingTripPROFIT.TabIndex = 21
@@ -272,15 +278,15 @@ Partial Class Bookings
         '
         Me.CityNAMES.FormattingEnabled = True
         Me.CityNAMES.Items.AddRange(New Object() {"Belfast", "Dover", "Edinburgh", "Hull", "Liverpool", "London", "Newcastle", "Southampton"})
-        Me.CityNAMES.Location = New System.Drawing.Point(421, 77)
+        Me.CityNAMES.Location = New System.Drawing.Point(674, 117)
         Me.CityNAMES.Name = "CityNAMES"
-        Me.CityNAMES.Size = New System.Drawing.Size(78, 147)
+        Me.CityNAMES.Size = New System.Drawing.Size(186, 147)
         Me.CityNAMES.TabIndex = 24
         '
         'CityToursNUM
         '
         Me.CityToursNUM.AutoSize = True
-        Me.CityToursNUM.Location = New System.Drawing.Point(505, 109)
+        Me.CityToursNUM.Location = New System.Drawing.Point(671, 346)
         Me.CityToursNUM.Name = "CityToursNUM"
         Me.CityToursNUM.Size = New System.Drawing.Size(0, 13)
         Me.CityToursNUM.TabIndex = 26
@@ -289,7 +295,7 @@ Partial Class Bookings
         '
         Me.ToursNumberLAB.AutoSize = True
         Me.ToursNumberLAB.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToursNumberLAB.Location = New System.Drawing.Point(505, 85)
+        Me.ToursNumberLAB.Location = New System.Drawing.Point(671, 322)
         Me.ToursNumberLAB.Name = "ToursNumberLAB"
         Me.ToursNumberLAB.Size = New System.Drawing.Size(141, 13)
         Me.ToursNumberLAB.TabIndex = 25
@@ -298,7 +304,7 @@ Partial Class Bookings
         'CityAverageNUM
         '
         Me.CityAverageNUM.AutoSize = True
-        Me.CityAverageNUM.Location = New System.Drawing.Point(505, 181)
+        Me.CityAverageNUM.Location = New System.Drawing.Point(671, 418)
         Me.CityAverageNUM.Name = "CityAverageNUM"
         Me.CityAverageNUM.Size = New System.Drawing.Size(0, 13)
         Me.CityAverageNUM.TabIndex = 28
@@ -307,7 +313,7 @@ Partial Class Bookings
         '
         Me.AverageNumberLAB.AutoSize = True
         Me.AverageNumberLAB.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AverageNumberLAB.Location = New System.Drawing.Point(505, 157)
+        Me.AverageNumberLAB.Location = New System.Drawing.Point(671, 394)
         Me.AverageNumberLAB.Name = "AverageNumberLAB"
         Me.AverageNumberLAB.Size = New System.Drawing.Size(169, 13)
         Me.AverageNumberLAB.TabIndex = 27
@@ -316,18 +322,54 @@ Partial Class Bookings
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(435, 52)
+        Me.Label3.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.Label3.Location = New System.Drawing.Point(722, 64)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 13)
+        Me.Label3.Size = New System.Drawing.Size(90, 33)
         Me.Label3.TabIndex = 29
         Me.Label3.Text = "Cities"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Location = New System.Drawing.Point(247, 141)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(258, 39)
+        Me.Label4.TabIndex = 30
+        Me.Label4.Text = "Please select a trip from the selection box on the left. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "This will then show th" &
+    "e information of said trip below." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "<---"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Red
+        Me.Label5.Location = New System.Drawing.Point(316, 101)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(101, 33)
+        Me.Label5.TabIndex = 31
+        Me.Label5.Text = "Help!?"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Location = New System.Drawing.Point(247, 187)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(307, 39)
+        Me.Label6.TabIndex = 32
+        Me.Label6.Text = "On the right you will see a selection of Cities from the database. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Please selec" &
+    "t one to view information about that specific City. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "--->"
         '
         'Bookings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(678, 450)
+        Me.ClientSize = New System.Drawing.Size(900, 559)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.CityAverageNUM)
         Me.Controls.Add(Me.AverageNumberLAB)
@@ -359,6 +401,7 @@ Partial Class Bookings
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Bookings"
+        Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Text = "WT Bookings"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -397,4 +440,7 @@ Partial Class Bookings
     Friend WithEvents CityAverageNUM As Label
     Friend WithEvents AverageNumberLAB As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
 End Class

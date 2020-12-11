@@ -16,7 +16,8 @@ Public Class Charts
     Private Sub Charts_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim staffID As String = CInt(Int((855855 * Rnd()) + 1))
         Dim MsgBoxText As String = "please make sure that you click the View Charts button while the visible charts are under maintenance!"
-        MessageBox.Show("Hello {0} {1}".Format(staffID, MsgBoxText))
+
+        MessageBox.Show("Hello {0}".Format(staffID))
     End Sub
 
     Private Sub viewChartsBTN_Click(sender As Object, e As EventArgs) Handles viewChartsBTN.Click
